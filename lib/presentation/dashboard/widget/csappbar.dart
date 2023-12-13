@@ -1,4 +1,3 @@
-/*
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -12,7 +11,7 @@ import 'package:totalhms/utils/sizes_helpers.dart';
 import '../../../utils/cssizedbox.dart';
 
 
-class CustomAppBar extends StatefulWidget  with PreferredSizeWidget {
+class CustomAppBar extends StatefulWidget  implements PreferredSizeWidget {
 
   @override
   final Size preferredSize;
@@ -44,7 +43,7 @@ class _CustomAppBarState extends State<CustomAppBar>  {
       systemOverlayStyle:  SystemUiOverlayStyle(statusBarColor: AppColors.appWhite),
       excludeHeaderSemantics: true,
       primary: true,
-      backwardsCompatibility: true,
+      //backwardsCompatibility: true,
       leading:
       (widget.isBackButtonEnable ?? false)?
       IconButton(
@@ -314,7 +313,6 @@ class _CustomAppBarState extends State<CustomAppBar>  {
     ),
   );
 
- */
 /* void _handleFilterPressed({controller}) {
     showModalBottomSheet<int>(
       backgroundColor: Colors.transparent,
@@ -341,7 +339,7 @@ class _CustomAppBarState extends State<CustomAppBar>  {
             child: MorePOPOver());
       },
     );
-  }*//*
+  }*/
 
 }
 
@@ -349,4 +347,3 @@ class _CustomAppBarState extends State<CustomAppBar>  {
 
 
 
-*/

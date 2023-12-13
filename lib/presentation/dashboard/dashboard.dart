@@ -19,7 +19,7 @@ class _DashboardState extends State<Dashboard> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey.shade50,
-  /*    appBar: CustomAppBar(isDashBoardEnable: true, title: '',widget: [
+      appBar: CustomAppBar(isDashBoardEnable: true, title: '',widget: [
         InkWell(
           onTap: (){
             showDialog(
@@ -37,7 +37,7 @@ class _DashboardState extends State<Dashboard> {
           },
             child: Image.asset("$appImagesBase${AppImages.menu}",height: displayWidth(context) * 0.065,)),
         const Box(width: 0.04,),
-      ]),*/
+      ]),
       body: const DashBoardWidget(),
     );
   }
@@ -56,8 +56,5 @@ class _DashboardState extends State<Dashboard> {
       },
     );
   }
-
-
-
 
 }
